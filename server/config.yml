@@ -1,0 +1,20 @@
+config:
+  target: "http://new-load-balancer-1292765768.us-east-1.elb.amazonaws.com"
+  phases:
+    - duration: 120  # Increased duration
+      arrivalRate: 20  # Start with previous max
+    - duration: 120  # Increased duration
+      arrivalRate: 40  # Gradually increase
+    - duration: 120  # Increased duration
+      arrivalRate: 60  # Further increase
+    - duration: 120  # Increased duration
+      arrivalRate: 80  # Pushing the limits
+  defaults:
+    timeout: 15  # Increased timeout to account for potential slower responses under high load
+
+scenarios:
+  - flow:
+      - post:
+          url: "/predict"
+          json:
+            title: "JoJo's Hot Dogs and BBQ"

@@ -1,0 +1,92 @@
+.organizations__details_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 1000px;
+  /* background-color: black; */
+  min-height: 300px;
+}
+
+.organizations__details_recommendation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 600px;
+  gap: 6px;
+  /* background-color: yellow; */
+}
+
+.organizations__details_recommended-place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  height: 150px;
+  box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.8);
+}
+
+.organization__details {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.organization-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.organization-address {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.organization-image {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.organization-review {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.organization-review h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.organization-review p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.review-author {
+  font-size: 14px;
+}
+
+.organization-schedule {
+  text-align: center;
+}
+
+.organization-schedule h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.organization-schedule p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
